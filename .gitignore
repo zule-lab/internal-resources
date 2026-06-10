@@ -12,3 +12,5 @@ _targets/
 .obsidian/workspace
 .obsidian/workspace.json
 .obsidian/graph.json
+
+**/*.quarto_ipynb

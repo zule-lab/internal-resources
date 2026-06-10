@@ -7,16 +7,13 @@ project:
 website:
   title: 'ZULE Lab Resources'
   page-navigation: true
-  reader-mode: true
-  repo-url: https://github.com/zule-lab/quarto-resources
-  repo-actions: [edit, issue]
-  navbar:
-    logo: imgs/ZULE_logo_white.png
-    title: 'ZULE Lab Resources & Policies'
-    right:
-      - icon: github
-        href: https://github.com/zule-lab/quarto-resources
+  reader-mode: false
+  repo-url: https://github.com/zule-lab/internal-resources
+  repo-actions: [edit]
   sidebar:
+    style: "docked"
+    logo: imgs/ZULE_logo_white.png
+    search: true
     contents:
       - href: index.qmd
         text: Home
@@ -27,42 +24,41 @@ website:
             text: Lab Code of Conduct
           - href: policies/02-individual-mentoring-plan.qmd
             text: Individual Mentoring Plan
-          - href: policies/03-online-grad-orientation.qmd
-            text: Online Graduate Student Orientation
           - href: policies/04-summer-undergrad-orientation.qmd
             text: Summer Undergraduate Student Orientation
           - href: policies/05-international-student-orientation.qmd
             text: Guide for Incoming International Students
-          - href: policies/06-msc-proposal-outline.qmd
-            text: MSc Proposal Outline Example
-      - section: "Spatial Resources"
+          - href: policies/06-data-management.qmd
+            text: Data Management & Archiving Policy
+      - section: "Data Resources"
         href: spatial-resources/00-spatial-resources.qmd
         contents:
-          - href: spatial-resources/01-building-data.qmd
-            text: Building Data
-          - href: spatial-resources/02-census.qmd
-            text: Census Data
-          - href: spatial-resources/03-vegetation-data.qmd
-            text: Vegetation Data
-          - href: spatial-resources/04-remote-sensing.qmd
-            text: Remote Sensing Data
-          - href: spatial-resources/05-road-data.qmd
-            text: Road Data
-          - href: spatial-resources/06-boundary-data.qmd
-            text: Boundary Data
-          - href: spatial-resources/07-planning-data.qmd
-            text: Planning & Climate Data
+          - href: spatial-resources/01-montreal-data.qmd
+            text: Montreal Data
+          - href: spatial-resources/02-quebec-data.qmd
+            text: Quebec Data
+          - href: spatial-resources/03-canada-data.qmd
+            text: Canada Data
+          - href: spatial-resources/04-other.qmd
+            text: Other Spatial Resources
       - section: "Other Resources"
         href: other-resources/00-other-resources.qmd
         contents:
           - href: other-resources/01-zule-lab-reading-list.qmd
             text: ZULE Lab Reading List
-          - href: other-resources/02-mtl-ecoorganizations.qmd
-            text: Montreal Eco-Organizations List
+      - section: Templates
+        href:
+        contents:
+           - text: MSc Proposal Outline (pdf)
+             href: policies/msc-proposal-outline.pdf
+
 
 
 format:
   html:
+    grid:
+      sidebar-width: 350px
+      margin-width: 200px
     theme:
       light: flatly
       dark: darkly
