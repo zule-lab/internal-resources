@@ -234,6 +234,61 @@
     ]
   },
   {
+    "objectID": "policies/06-data-management.html",
+    "href": "policies/06-data-management.html",
+    "title": "Lab Data Management & Archiving Policy",
+    "section": "",
+    "text": "The ZULE lab highly values scientific transparency and reproducibility. One of the ways that we ensure our science is transparent and reproducible is through the consistent application of a data management and archiving policy.\nData comes in all shapes and sizes in this lab. This policy applies to you no matter how you collected and used your data (e.g., fieldwork, open data, data from previous studies, etc.). Data management should start before you start collecting your data, to ensure that it is done in a transparent and reproducible way and to facilitate data archiving.",
+    "crumbs": [
+      "Lab Policies",
+      "Data Management & Archiving Policy"
+    ]
+  },
+  {
+    "objectID": "policies/06-data-management.html#before-you-collect-data",
+    "href": "policies/06-data-management.html#before-you-collect-data",
+    "title": "Lab Data Management & Archiving Policy",
+    "section": "Before you collect data",
+    "text": "Before you collect data\n\n1. Data sheets\nRegardless of whether you are using a tablet or paper, thinking about how you set up your data sheets so that data is clear and easy to input is important. There are examples of past data sheets in the Templates section (LINK).\nIf using a tablet, make sure that there is a plan to back up the data to the cloud during data input in case the tablet is damaged or runs out of battery. Always bring a few paper datasheets in case of technological issues.\nIf putting out passive sensors and don’t need datasheets, make sure that there is a recording of the sensor IDs and locations. This can be done by hand, with a GPS, or with another software such as Google My Maps.\n\n\n2. Project repository\nThe set up of the project is critical to the future interpretability of the project. There should be one folder (repository) dedicated to each “project” on your computer. Often this looks like one repository per manuscript or chapter of your thesis. In the context of R + RStudio, the easiest way to create an easily shareable project repository is to use a RStudio Project.\n\n\nWithin the repository, good file structure allows you to manage all the components of your (often large) projects, while facilitating easy sharing and reducing the risk of accidentally deleting/altering important files.\nOur lab generally sets up the file structure in a similar fashion (though it does not have to be exactly the same):\nproject\n└───data/\n    └───derived/\n    └───raw-data/\n└───R/\n└───script/\n└───graphics/\n└───README.md\nWhere the input/ folder includes all raw data (and associated metadata - LINK). This folder should be backed up in multiple places. The raw-data/ folder should be treated as read-only (do not edit these files directly). The derived/ folder includes the edited versions of raw data files used for subsequent analysis.\noutput/ folder includes all the outputs generated through your analysis. That could include spatial data, model outputs, summary tables, and more.\nR/ includes the scripts you use in your analysis. Obviously this example is specific to R but if you use a different coding language/multiple coding languages, you can adjust the name of the folder as is appropriate.\nWithin this folder, it should be easily identifiable which order scripts are used. The simplest way to do this is to name them sequentially. For example:\n1-DataCleaning.R\n2-DataPrep.R\n3-Model.R\n4-ModelFigure.R\ngraphics/ holds all the figures and graphics that you produce through your analysis.\nFinally, the README.md file can act as a type of metadata - LINK or project overview : it facilitates people using your data, script, etc. There are some basic requirements from a README in order to make your work usable. We need to know:\n\nhow the data is structured what it describes\nhow to read it (e.g. column headings and units)\nmethodological information such as instrument settings and calibrations, reagents used, or survey questions\nexactly what they are allowed to do with the data through rights metadata such as licensing\nhow to acknowledge the original creators by citing the data\n\nNOTE: there is a second way that some people in the lab set up their repositories - the {targets} package for setting up analysis as a pipeline. This approach will change the setup and how you interact with the code slightly. For more details, see this workshop developed by lab member Bella and their colleague, Alec Robitaille.\n\n\n3. GitHub\nGitHub is a version control software, that allows you to track changes you make to your project while also facilitating collaboration, easy sharing, and backups.\nFrom missing semester:\n\nVersion control systems (VCSs) are tools used to track changes to source code (or other collections of files and folders). As the name implies, these tools help maintain a history of changes; furthermore, they facilitate collaboration. VCSs track changes to a folder and its contents in a series of snapshots, where each snapshot encapsulates the entire state of files/folders within a top-level directory. VCSs also maintain metadata like who created each snapshot, messages associated with each snapshot, and so on.\n\n\nWhy is version control useful? Even when you’re working by yourself, it can let you look at old snapshots of a project, keep a log of why certain changes were made, work on parallel branches of development, and much more. When working with others, it’s an invaluable tool for seeing what other people have changed, as well as resolving conflicts in concurrent development.\n\nEach student project in the ZULE lab goes on the lab GitHub. Setting your repository(ies) up before you are done data collection/have started coding, allows for a smooth transition. Many people in the lab have experience setting up GitHub repositories and using git, so if you are wondering how to do this, reach out to your labmates. There are also many online resources, many of which are linked in References.\nSome things to consider when using git:\n\nlarge files: GitHub repositories cannot store individual files &gt; 100 MB or repositories &gt; 10 GB. If you have large file(s), add them to your .gitignore document (see more here)\nprivate vs public: in this lab, we generally publish our repositories as public as part of our commitment to open science. However, some data (and associated code) should NOT be publicly visible (e.g., interview data). Make sure to take all appropriate privacy precautions when working with git",
+    "crumbs": [
+      "Lab Policies",
+      "Data Management & Archiving Policy"
+    ]
+  },
+  {
+    "objectID": "policies/06-data-management.html#post-data-collection",
+    "href": "policies/06-data-management.html#post-data-collection",
+    "title": "Lab Data Management & Archiving Policy",
+    "section": "Post-data collection",
+    "text": "Post-data collection\n\n1. Data back ups\nImmediately upon data collection, you should be backing up your raw data files. Your raw data should be stored on your computer, a lab computer (with a working external hard drive), and a cloud system. If you are collecting your data over months or years, your back up system should be established as soon as you have collected any raw data and added to as data collection continues.\nPersonal Computers Have your raw- ata clearly labelled and in an easily-identifiable folder (see Project Repository section above). Treat the raw- ata files as read-only and make copies of them before ever editing.\nLab Computers All lab computers in the ZULE lab have an external hard drive connected to them, that regularly performs backups. Once your raw data is added to a lab computer, ensure that the external hard drive is regularly performing backups and that the backups include the drive where you have stored your data.\nbiol-e6f40c, the lab computer next to the oven, stores all the lab alumni data on the D: drive (which is regularly backed up). If you would like to store your raw data there before you have completed your project, please go ahead. However, as mentioned above, all lab computers have storage back up, so for active projects, your data can be stored on any of the lab computers.\nCloud Storage As Concordia students, you are given 1TB of OneDrive storage associated with your student email. This is a convenient cloud storage solution for most people in the lab.\nIf you are cosupervised or not a Concordia student for a different reason, you can discuss with Carly temporarily storing your raw data on the lab’s Google Drive, until you have formally archived it at the end of your project on Zenodo.\nIf neither of those storage solutions work for you, there are other free web services such as Dropbox and Proton that may be useful to you.\n\n\n2. Metadata",
+    "crumbs": [
+      "Lab Policies",
+      "Data Management & Archiving Policy"
+    ]
+  },
+  {
+    "objectID": "policies/06-data-management.html#when-the-project-ends",
+    "href": "policies/06-data-management.html#when-the-project-ends",
+    "title": "Lab Data Management & Archiving Policy",
+    "section": "When the project ends",
+    "text": "When the project ends\n\nArchiving on lab computer\nArchiving publicly",
+    "crumbs": [
+      "Lab Policies",
+      "Data Management & Archiving Policy"
+    ]
+  },
+  {
+    "objectID": "policies/06-data-management.html#references",
+    "href": "policies/06-data-management.html#references",
+    "title": "Lab Data Management & Archiving Policy",
+    "section": "References",
+    "text": "References\nR for Reproducible Scientific Analysis:\nEfficient R Programming\nARDC Metadata Guide\nZULE’s Data and GitHub Crash Course\nData Analysis & Visualization in R for Ecologists\nData Organization in Spreadsheets for Ecologists\nVersion Control with Git and GitHub\nhappygitwithr\nOpen Access to Research Data\nVal Lucet’s Git Workshop",
+    "crumbs": [
+      "Lab Policies",
+      "Data Management & Archiving Policy"
+    ]
+  },
+  {
     "objectID": "other-resources/02-mtl-ecoorganizations.html",
     "href": "other-resources/02-mtl-ecoorganizations.html",
     "title": "Montréal Eco-Organizations Database",
