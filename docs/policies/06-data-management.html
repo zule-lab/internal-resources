@@ -521,6 +521,29 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="metadata" class="level3">
 <h3 class="anchored" data-anchor-id="metadata">2. Metadata</h3>
+<p>All raw data files associated with your project should have accompanying metadata. There are many approaches to how to format and prepare metadata. If you are interested in learning more, you can check out these resources:</p>
+<p>RESOURCES</p>
+<p>For this lab, the minimum level of metadata that should be included is a text file found with your raw data that specifies the file name, general description of file, and a description of every column (with units).</p>
+<p>For example, if your <code>raw-data/</code> folder looked something like:</p>
+<pre><code>raw-data/
+└───dataset1.csv
+└───dataset2.csv
+└───metadata.txt</code></pre>
+<p>Your metadata.txt file content would look something like:</p>
+<blockquote class="blockquote">
+<p>Any data within subfolders has according metadata within the same subfolder.</p>
+<p>This data and metadata accompanies PAPER/THESIS</p>
+<p>dataset: dataset1.csv</p>
+<p>DESCRIPTION.</p>
+<p>Column1: description (units)</p>
+<p>Column2: description (units)</p>
+<p>Column3: description (units)</p>
+<p>dataset: dataset2.csv</p>
+<p>DESCRIPTION.</p>
+<p>Column1: description (units)</p>
+<p>Column2: description (units)</p>
+</blockquote>
+<p>Before archiving your data, make sure that <strong>all</strong> data files are accompanied by metadata. This is an extremely important step in making your science transparent and usable by future people. It is also much easier to create metadata as you go, so that you make sure to remember the details of each dataset, which can help a lot when writing your methods section.</p>
 </section>
 </section>
 <section id="when-the-project-ends" class="level2">
